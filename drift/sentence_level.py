@@ -24,9 +24,9 @@ def smooth(values, window=10):
     return np.convolve(values, np.ones(window)/window, mode='valid')
 
 # get text files
-with open("books_human.txt", "r", encoding="utf-8") as f:
+with open("../assets/text/books_human.txt", "r", encoding="utf-8") as f:
     human_text = f.read()
-with open("books_ai.txt", "r", encoding="utf-8") as f:
+with open("../assets/text/books_ai.txt", "r", encoding="utf-8") as f:
     ai_text = f.read()
 
 # process text files into sentences
