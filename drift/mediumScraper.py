@@ -9,6 +9,6 @@ soup = BeautifulSoup(response.text, 'html.parser')
 
 # extract paragraph texts
 paragraphs = soup.find_all('p')
-content = '\n'.join([p.get_text(strip=True) for p in paragraphs])
+content = '\n\n'.join([p.get_text(strip=True) for p in paragraphs])
 
 print(content)
