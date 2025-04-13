@@ -36,6 +36,13 @@ Visualizes sentence-level semantic trajectory (PCA-reduced 2D path).
 
 AI moves more **linearly**, while human writing veers off in distinct directions.
 
+### KMeans Clustering of Sentence Embeddings
+Each point = one sentence embedding, clustered into 5 topics.
+
+![KMeans](./graphs/sentence_kmeans.png)
+
+AI sentence cluster **tightly** and repetitively. Human clusters are more **spread**, suggesting wider topical coverage and idea development.
+
 ---
 
 ### KMeans Clustering of Paragraph Embeddings
