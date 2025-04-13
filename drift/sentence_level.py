@@ -93,11 +93,9 @@ for i in range(len(ai_reduced) - 1):
 # k means clustering
 k = 5
 
-# Apply KMeans to each separately
 kmeans_human = KMeans(n_clusters=k, random_state=0).fit(human_reduced)
 kmeans_ai = KMeans(n_clusters=k, random_state=0).fit(ai_reduced)
 
-# Plot clusters (centroids + color-coded points)
 plt.figure(figsize=(10, 6))
 
 plt.scatter(human_reduced[:, 0], human_reduced[:, 1], c=kmeans_human.labels_, cmap='Blues', label='Human', alpha=0.6)
